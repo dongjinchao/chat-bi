@@ -1,0 +1,158 @@
+2026-06-13 23:24:54,449 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-13 23:24:54,655 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-13 23:24:54,657 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-13 23:24:54,657 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-13 23:24:54,996 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-13 23:24:54,996 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-13 23:24:55,127 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Started server process [18040]
+INFO:     Waiting for application startup.
+2026-06-13 23:24:55,179 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-13 23:24:55,180 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-13 23:24:55,199 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-13 23:24:55,204 - apps.datasource.crud.table - INFO:40 - get tables
+2026-06-13 23:24:55,204 - main - INFO:59 - ✅ SQLBot 初始化完成
+2026-06-13 23:24:55,235 - apps.datasource.crud.table - INFO:43 - table result: 14
+2026-06-13 23:24:55,235 - apps.datasource.crud.table - INFO:64 - start table embedding
+2026-06-13 23:24:55,237 - sqlbot_xpack.config.rsa_manage - INFO:121 - XPack global rsa cache clean successfully.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\terminology\curd\terminology.py", line 668, in save_embeddings
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\data_training\curd\data_training.py", line 457, in save_embeddings
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\table.py", line 66, in save_table_embedding
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+2026-06-13 23:24:56,861 - apps.datasource.crud.table - INFO:46 - get datasource
+2026-06-13 23:24:56,862 - apps.datasource.crud.table - INFO:49 - datasource result: 1
+2026-06-13 23:24:56,863 - apps.datasource.crud.table - INFO:116 - start datasource embedding
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\table.py", line 118, in save_ds_embedding
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+2026-06-13 23:25:03,342 - sqlbot_xpack.license.manage - INFO:145 - query license info without cache!
+2026-06-13 23:25:03,349 - apps.system.middleware.auth - ERROR:144 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 125, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-13 23:25:05,298 - apps.system.middleware.auth - ERROR:144 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 125, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-13 23:35:45,284 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
