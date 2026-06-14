@@ -1,14 +1,14 @@
-2026-06-13 23:24:54,443 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
-2026-06-13 23:24:54,655 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
-2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
-2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
-2026-06-13 23:24:54,656 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
-2026-06-13 23:24:54,657 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
-2026-06-13 23:24:54,657 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
-2026-06-13 23:24:54,987 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
-2026-06-13 23:24:54,987 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
-2026-06-13 23:24:55,127 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
-INFO:     Started server process [49992]
+2026-06-14 03:19:35,962 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-14 03:19:35,963 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-14 03:19:35,964 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-14 03:19:35,964 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-14 03:19:35,964 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-14 03:19:35,964 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-14 03:19:38,738 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 03:19:38,847 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 03:19:38,848 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-14 03:19:39,019 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Started server process [59708]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)

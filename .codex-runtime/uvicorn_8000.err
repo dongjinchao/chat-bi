@@ -1,0 +1,109 @@
+2026-06-14 05:07:03,007 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-14 05:07:03,016 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-14 05:07:03,017 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-14 05:07:03,017 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-14 05:07:03,018 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-14 05:07:03,018 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-14 05:07:05,456 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 05:07:05,555 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 05:07:05,555 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-14 05:07:05,676 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Started server process [59588]
+INFO:     Waiting for application startup.
+2026-06-14 05:07:05,714 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 05:07:05,715 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 05:07:05,732 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 05:07:05,738 - apps.datasource.crud.table - INFO:40 - get tables
+2026-06-14 05:07:05,738 - main - INFO:59 - ✅ SQLBot 初始化完成
+2026-06-14 05:07:05,766 - apps.datasource.crud.table - INFO:43 - table result: 29
+2026-06-14 05:07:05,767 - apps.datasource.crud.table - INFO:64 - start table embedding
+2026-06-14 05:07:05,768 - sqlbot_xpack.config.rsa_manage - INFO:121 - XPack global rsa cache clean successfully.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\terminology\curd\terminology.py", line 662, in save_embeddings
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\data_training\curd\data_training.py", line 454, in save_embeddings
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\table.py", line 66, in save_table_embedding
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found
+2026-06-14 05:07:07,301 - apps.datasource.crud.table - INFO:46 - get datasource
+2026-06-14 05:07:07,303 - apps.datasource.crud.table - INFO:49 - datasource result: 2
+2026-06-14 05:07:07,303 - apps.datasource.crud.table - INFO:116 - start datasource embedding
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\table.py", line 118, in save_ds_embedding
+    model = EmbeddingModelCache.get_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 60, in get_model
+    model_instance = EmbeddingModelCache._new_instance(config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\embedding.py", line 34, in _new_instance
+    return HuggingFaceEmbeddings(model_name=config.name, cache_folder=config.folder,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 98, in __init__
+    self._client = model_cls(
+                   ^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 184, in __init__
+    super().__init__(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 194, in __init__
+    raise FileNotFoundError(f"Path {model_name_or_path} not found")
+FileNotFoundError: Path /opt/sqlbot/models\embedding\shibing624_text2vec-base-chinese not found

@@ -1,0 +1,5 @@
+check rsa key pair in db
+INFO:     127.0.0.1:55033 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63033 - "GET /xpack_static/license-generator.umd.js?t=1781384979833 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60031 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60031 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request

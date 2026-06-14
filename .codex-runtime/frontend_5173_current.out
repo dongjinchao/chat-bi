@@ -1,0 +1,49 @@
+development
+{
+  VITE_API_BASE_URL: 'http://localhost:8000/api/v1',
+  VITE_APP_TITLE: 'SQLBot (Development)'
+}
+
+  [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m8735[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2membedded.html[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue, /src/views/chat/ChatTokenTime.vue, /src/views/chat/answer/BaseAnswer.vue, /src/views/chat/chat-block/ChartBlock.vue[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/index.vue[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/LoginPreview.vue[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/parameter/index.vue[22m
+[2m17:32:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/index.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2membedded.html[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue, /src/views/chat/ChatTokenTime.vue, /src/views/chat/answer/BaseAnswer.vue, /src/views/chat/chat-block/ChartBlock.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/index.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/LoginPreview.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/parameter/index.vue[22m
+[2m17:33:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/index.vue[22m
+[2m17:54:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/utils.ts[22m
+[2m18:44:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m18:45:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatCreator.vue[22m
+[2m18:46:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue?vue&type=style&index=0&scoped=39a51454&lang.less[22m
+[2m18:53:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m18:57:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatCreator.vue[22m
+[2m19:01:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:01:54[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:02:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:02:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:02:34[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:03:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:05:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatCreator.vue[22m
+[2m19:05:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:21:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue, /src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m

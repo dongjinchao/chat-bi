@@ -1,0 +1,122 @@
+check rsa key pair in db
+INFO:     127.0.0.1:55771 - "GET /xpack_static/license-generator.umd.js?t=1781434997550 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54049 - "GET /xpack_static/license-generator.umd.js?t=1781434997694 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "GET /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "GET /api/v1/user/info HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60216 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60216 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60216 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:55771 - "GET /xpack_static/license-generator.umd.js?t=1781435000496 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "GET /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49292 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "POST /api/v1/login/access-token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/user/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/datasource/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/system/license/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/system/parameter/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/chat/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "POST /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "POST /api/v1/dashboard/load_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59450 - "GET /api/v1/system/parameter/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49822 - "GET /api/v1/chat/list?datasource_id=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57202 - "POST /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57202 - "POST /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58161 - "OPTIONS /api/v1/chat/list?datasource_id=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57202 - "GET /api/v1/system/parameter/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/chat/list?datasource_id=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/chat/list?datasource_id=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "GET /xpack_static/license-generator.umd.js?t=1781435124400 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51938 - "GET /xpack_static/license-generator.umd.js?t=1781435124679 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/user/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/user/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/datasource/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/system/license/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/datasource/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/system/license/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54515 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:49244 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:49244 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:59833 - "POST /api/v1/login/access-token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59833 - "POST /api/v1/dashboard/load_resource HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59915 - "POST /api/v1/login/access-token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59915 - "POST /api/v1/dashboard/load_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57887 - "GET /xpack_static/license-generator.umd.js?t=1781435212974 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56770 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:56770 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:56770 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53768 - "GET /xpack_static/license-generator.umd.js?t=1781435311858 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57537 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:57537 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:57537 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52953 - "OPTIONS /api/v1/system/parameter/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/list?datasource_id=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "GET /api/v1/system/parameter/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/list?datasource_id=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/record/57/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "OPTIONS /api/v1/chat/recent_questions/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57167 - "OPTIONS /api/v1/recommended_problem/get_datasource_recommended_base/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57167 - "GET /api/v1/chat/recent_questions/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "GET /api/v1/recommended_problem/get_datasource_recommended_base/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/record/57/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/recommend_questions/56?articles_number=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "POST /api/v1/chat/recommend_questions/56?articles_number=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/23 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/23 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/chat/record/50/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57167 - "OPTIONS /api/v1/chat/record/51/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64702 - "OPTIONS /api/v1/chat/record/52/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57167 - "GET /api/v1/recommended_problem/get_datasource_recommended_base/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/recent_questions/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64702 - "GET /api/v1/chat/record/50/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57167 - "GET /api/v1/chat/record/51/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "GET /api/v1/chat/record/52/data HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "OPTIONS /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "POST /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56634 - "OPTIONS /api/v1/dashboard/load_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "POST /api/v1/dashboard/load_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63507 - "GET /xpack_static/license-generator.umd.js?t=1781435673890 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62345 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62345 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62345 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:59450 - "GET /xpack_static/license-generator.umd.js?t=1781435803011 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64106 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:64106 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:64106 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:55758 - "GET /xpack_static/license-generator.umd.js?t=1781435809554 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:63799 - "GET /xpack_static/license-generator.umd.js?t=1781436079896 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62863 - "GET /xpack_static/license-generator.umd.js?t=1781436079938 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62695 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62695 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62695 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/system/config/key HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/user/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/user/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/datasource/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/license/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "OPTIONS /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/datasource/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/system/license/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "GET /api/v1/system/license HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50061 - "POST /api/v1/dashboard/list_resource HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59446 - "GET /xpack_static/license-generator.umd.js?t=1781436177612 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53805 - "OPTIONS /api/v1/system/config/key HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:53805 - "OPTIONS /api/v1/system/license HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:56179 - "OPTIONS /api/v1/user/info HTTP/1.1" 400 Bad Request

@@ -1,0 +1,48 @@
+development
+{
+  VITE_API_BASE_URL: 'http://localhost:8000/api/v1',
+  VITE_APP_TITLE: 'SQLBot (Development)'
+}
+
+  [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m575[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m10:30:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m10:30:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m10:30:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m10:31:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m10:33:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m11:45:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/component/ChartComponent.vue[22m
+[2m15:04:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewSingle.vue, /src/views/dashboard/editor/index.vue, /src/views/dashboard/preview/SQPreviewShow.vue, /src/views/dashboard/editor/Toolbar.vue, /src/views/dashboard/common/ResourceGroupOpt.vue, /src/views/dashboard/canvas/CanvasCore.vue, /src/views/dashboard/common/AddViewDashboard.vue, /src/views/dashboard/common/ResourceTree.vue[22m
+[2m15:07:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/canvas/ComponentBar.vue[22m
+[2m15:07:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/canvas/CanvasShape.vue[22m
+[2m15:08:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/canvas/CanvasCore.vue[22m
+[2m15:08:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/canvas/CanvasCore.vue[22m
+[2m15:08:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/canvas/CanvasCore.vue[22m
+[2m15:08:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33melement-plus-secondary/es/components/alert/style/css[32m[39m
+[2m15:08:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m15:08:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m15:09:19[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m15:09:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m15:10:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m15:10:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/DashboardSqlEditor.vue[22m
+[2m15:20:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/api/chat.ts[22m
+[2m15:20:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/ChatChartSelection.vue[22m
+[2m15:37:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/index.vue, /src/views/dashboard/preview/SQPreview.vue, /src/views/dashboard/preview/SQPreviewShow.vue, /src/views/dashboard/preview/SQPreviewSingle.vue, /src/views/dashboard/editor/Toolbar.vue, /src/views/dashboard/common/ResourceGroupOpt.vue, /src/views/dashboard/canvas/CanvasCore.vue, /src/views/dashboard/common/AddViewDashboard.vue, /src/views/dashboard/common/ResourceTree.vue, /src/views/dashboard/common/SQFullscreen.vue, /src/views/dashboard/components/sq-text/index.vue[22m
+[2m15:38:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewSingle.vue, /src/views/dashboard/editor/index.vue, /src/views/dashboard/preview/SQPreviewShow.vue, /src/views/dashboard/editor/Toolbar.vue, /src/views/dashboard/common/ResourceGroupOpt.vue, /src/views/dashboard/canvas/CanvasCore.vue, /src/views/dashboard/common/AddViewDashboard.vue[22m
+[2m15:38:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue[22m
+[2m15:38:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceGroupOpt.vue[22m
+[2m15:38:52[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceGroupOpt.vue[22m
+[2m15:39:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/index.vue[22m
+[2m15:39:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/index.vue[22m
+[2m15:40:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/Toolbar.vue[22m
+[2m15:41:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/Toolbar.vue[22m
+[2m15:41:58[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/AddViewDashboard.vue[22m
+[2m15:42:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/AddViewDashboard.vue[22m
+[2m15:42:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/AddViewDashboard.vue[22m
+[2m15:42:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewHead.vue[22m
+[2m15:42:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewShow.vue[22m
+[2m15:45:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/chat-block/ChartBlock.vue[22m
+[2m15:55:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/chat-block/ChartBlock.vue[22m
+[2m15:56:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/chat-block/ChartBlock.vue[22m
+[2m15:57:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/chat-block/ChartBlock.vue[22m
