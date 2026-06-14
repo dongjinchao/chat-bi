@@ -1,0 +1,107 @@
+2026-06-14 22:03:29,520 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 22:03:29,802 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 22:03:29,812 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [22796]
+INFO:     Waiting for application startup.
+2026-06-14 22:03:29,953 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 22:03:29,955 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 22:03:29,974 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 22:03:30,005 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-14 22:04:08,433 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-14 22:04:08,445 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-14 22:04:09,419 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-14 22:04:09,421 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-14 22:04:09,422 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+2026-06-14 22:08:54,614 - apps.system.middleware.auth - ERROR:138 - Token validation error: Signature verification failed
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\system\middleware\auth.py", line 122, in validateToken
+    payload = jwt.decode(
+              ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 368, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jwt.py", line 265, in decode_complete
+    decoded = self._jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 270, in decode_complete
+    self._verify_signature(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\jwt\api_jws.py", line 417, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed

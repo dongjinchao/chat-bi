@@ -1,0 +1,282 @@
+[2m21:38:59[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:38:59[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:33[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:39:33[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:34[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:35[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:37[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:39[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:46[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:39:46[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:39:56[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:39:56[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:40:01[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:40:09[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:40:09[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:40:30[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:40:30[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)
+[2m21:40:37[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Invalid end tag.
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+[2m21:40:37[22m [31m[1m[vite][22m[39m [31mInternal server error: Invalid end tag.[39m
+  Plugin: [35mvite:vue[39m
+  File: [36mD:/work/AI/SQLBot/frontend/src/views/system/user/User.vue[39m:1761:1
+[33m  1759|    }
+  1760|  }
+  1761|  </style>
+     |   ^
+  1762|  [39m
+      at createCompilerError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2391:9)
+      at Tokenizer.stateInClosingTagName (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at Object.parse (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (D:\work\AI\SQLBot\frontend\node_modules\@vue\compiler-sfc\dist\compiler-sfc.cjs.js:1824:24)
+      at createDescriptor (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:71:43)
+      at handleHotUpdate (file:///D:/work/AI/SQLBot/frontend/node_modules/@vitejs/plugin-vue/dist/index.mjs:2198:26)

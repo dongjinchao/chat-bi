@@ -1,0 +1,14 @@
+2026-06-14 21:14:47,104 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-14 21:14:47,105 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-14 21:14:47,105 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-14 21:14:47,105 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-14 21:14:47,105 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-14 21:14:47,105 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-14 21:14:49,726 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:14:49,854 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:14:49,854 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-14 21:14:50,037 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Started server process [6772]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)

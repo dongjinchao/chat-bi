@@ -1,0 +1,953 @@
+INFO:     Will watch for changes in these directories: ['D:\\work\\AI\\SQLBot\\backend']
+2026-06-14 21:14:47,092 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-14 21:14:47,102 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-14 21:14:47,102 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-14 21:14:47,103 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-14 21:14:47,103 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-14 21:14:47,103 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-14 21:14:49,726 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:14:49,854 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:14:49,854 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-14 21:14:50,036 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [48900] using WatchFiles
+2026-06-14 21:14:51,563 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.schemas
+2026-06-14 21:14:51,573 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.tables
+2026-06-14 21:14:51,573 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.types
+2026-06-14 21:14:51,573 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.constraints
+2026-06-14 21:14:51,573 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.defaults
+2026-06-14 21:14:51,573 - alembic.runtime.plugins - INFO:37 - setup plugin alembic.autogenerate.comments
+2026-06-14 21:14:54,033 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:14:54,149 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:14:54,149 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+2026-06-14 21:14:54,278 - sqlbot_xpack.core - INFO:52 - XPack core initialized successfully.
+INFO:     Started server process [37288]
+INFO:     Waiting for application startup.
+2026-06-14 21:14:54,314 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:14:54,314 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:14:54,335 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:14:54,339 - main - INFO:59 - ✅ 星通智数 初始化完成
+2026-06-14 21:14:54,343 - sqlbot_xpack.config.rsa_manage - INFO:121 - XPack global rsa cache clean successfully.
+INFO:     Application startup complete.
+2026-06-14 21:14:59,632 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:15:04,891 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:01,303 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:02,723 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:02,739 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:02,771 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:03,558 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:03,600 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:34,548 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:16:34,583 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:17:08,935 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:17:44,374 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:17:44,396 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:19:16,859 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:19:16,881 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:25,216 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:27,578 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:28,934 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:28,937 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:30,869 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:31,611 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:36,075 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:36,672 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:37,227 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:37,228 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:38,489 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:40,612 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:41,125 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:41,136 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:45,523 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:50,250 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:50,251 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:55,590 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:56,269 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:56,638 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:20:56,641 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:23:07,433 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+WARNING:  WatchFiles detected changes in 'common\utils\file_utils.py', 'apps\system\api\appearance.py', 'apps\system\api\audit.py', 'apps\system\models\system_model.py'. Reloading...
+2026-06-14 21:34:17,684 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:34:18,923 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:34:19,825 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+INFO:     Shutting down
+2026-06-14 21:34:21,425 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 98, in __call__
+    response = await self.get_response(path, scope)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\staticfiles.py", line 149, in get_response
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+INFO:     Waiting for application shutdown.
+2026-06-14 21:34:21,529 - main - INFO:64 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37288]
+WARNING:  WatchFiles detected changes in 'common\utils\aes_crypto.py', 'apps\system\api\login.py', 'apps\system\api\parameter.py', 'common\utils\whitelist.py', 'apps\system\crud\parameter_manage.py', 'apps\system\api\assistant.py', 'apps\api.py', 'main.py', 'apps\chat\task\llm.py', 'common\audit\schemas\logger_decorator.py', 'common\utils\crypto.py'. Reloading...
+2026-06-14 21:34:26,161 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:34:26,581 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:34:26,583 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [26104]
+INFO:     Waiting for application startup.
+2026-06-14 21:34:26,698 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:34:26,699 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:34:26,720 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:34:26,750 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:34:26,860 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26104]
+2026-06-14 21:34:31,298 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:34:31,544 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:34:31,553 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [10616]
+INFO:     Waiting for application startup.
+2026-06-14 21:34:31,670 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:34:31,670 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:34:31,689 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:34:31,718 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'apps\dashboard\crud\dashboard_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:39:33,894 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10616]
+WARNING:  WatchFiles detected changes in 'apps\datasource\api\datasource.py'. Reloading...
+2026-06-14 21:39:38,429 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:39:38,684 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:39:38,684 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [46152]
+INFO:     Waiting for application startup.
+2026-06-14 21:39:38,801 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:39:38,801 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:39:38,822 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:39:38,850 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:39:38,963 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46152]
+2026-06-14 21:39:43,630 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:39:43,874 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:39:43,884 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [46008]
+INFO:     Waiting for application startup.
+2026-06-14 21:39:43,999 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:39:43,999 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:39:44,017 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:39:44,046 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'apps\datasource\crud\permission.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:41:45,893 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46008]
+WARNING:  WatchFiles detected changes in 'apps\datasource\crud\datasource.py'. Reloading...
+2026-06-14 21:41:50,375 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:41:50,626 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:41:50,635 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [12716]
+INFO:     Waiting for application startup.
+2026-06-14 21:41:50,752 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:41:50,752 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:41:50,771 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:41:50,799 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:41:50,905 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12716]
+2026-06-14 21:41:55,413 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:41:55,667 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:41:55,677 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [39544]
+INFO:     Waiting for application startup.
+2026-06-14 21:41:55,792 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:41:55,793 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:41:55,812 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:41:55,840 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'apps\datasource\crud\datasource.py'. Reloading...
+2026-06-14 21:43:34,641 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-06-14 21:43:39,220 - main - INFO:60 - 星通智数 应用关闭
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39544]
+2026-06-14 21:43:43,656 - apps.db.db - INFO:48 - init oracle client failed, because not found oracle client, use thin mode
+2026-06-14 21:43:43,900 - fastapi_mcp.server - INFO:297 - No auth config provided, skipping auth setup
+2026-06-14 21:43:43,910 - fastapi_mcp.server - INFO:368 - MCP server listening at /mcp
+INFO:     Started server process [5840]
+INFO:     Waiting for application startup.
+2026-06-14 21:43:44,024 - alembic.runtime.migration - INFO:210 - Context impl PostgresqlImpl.
+2026-06-14 21:43:44,024 - alembic.runtime.migration - INFO:213 - Will assume transactional DDL.
+2026-06-14 21:43:44,043 - common.core.sqlbot_cache - INFO:131 - SQLBot 使用内存缓存, 仅支持单进程模式
+2026-06-14 21:43:44,072 - main - INFO:57 - ✅ 星通智数 初始化完成
+INFO:     Application startup complete.
+2026-06-14 21:43:45,737 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:43:55,816 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:21,631 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:23,105 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:24,420 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:32,214 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:33,413 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:34,195 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:34,683 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:36,045 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:36,495 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:37,069 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 21:44:37,588 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found

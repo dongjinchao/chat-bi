@@ -47,3 +47,180 @@ development
 [2m19:05:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatCreator.vue[22m
 [2m19:05:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
 [2m19:21:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue, /src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m19:27:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/index.vue, /src/views/chat/index.vue, /src/components/layout/ProjectSelector.vue, /src/views/dashboard/editor/Toolbar.vue, /src/views/analysis-assistant/AnalysisAssistantDock.vue, /src/views/chat/ChatCreator.vue, /src/views/dashboard/preview/SQPreviewSingle.vue, /src/views/dashboard/preview/SQPreviewShow.vue, /src/views/dashboard/common/ResourceGroupOpt.vue, /src/views/dashboard/canvas/CanvasCore.vue, /src/views/dashboard/common/AddViewDashboard.vue, /src/views/dashboard/editor/ChatChartSelection.vue, /src/views/dashboard/common/ResourceTree.vue[22m
+[2m19:28:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ProjectSelector.vue[22m
+[2m19:28:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m19:28:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue[22m
+[2m19:28:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/Datasource.vue[22m
+[2m19:28:51[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/Card.vue[22m
+[2m19:29:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/ProjectUserDialog.vue, /src/views/ds/ProjectUserDialog.vue?vue&type=style&index=0&lang.less[22m
+[2m19:29:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/ProjectUserDialog.vue[22m
+[2m19:29:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m19:29:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m19:29:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m19:30:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m19:32:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/utils.ts[22m
+[2m19:34:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue, /src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m19:34:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Person.vue?vue&type=style&index=0&scoped=89eb3129&lang.less, /src/components/layout/Person.vue?vue&type=style&index=1&lang.less[22m
+[2m19:34:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ProjectSelector.vue?vue&type=style&index=0&scoped=93423744&lang.less, /src/components/layout/ProjectSelector.vue?vue&type=style&index=1&lang.less[22m
+[2m19:35:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Menu.vue?vue&type=style&index=0&lang.less[22m
+[2m19:35:13[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewShow.vue[22m
+[2m19:35:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m19:35:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m19:36:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m19:38:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ThemeSwitcher.vue[22m
+[2m19:38:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m19:39:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/ProjectUserDialog.vue[22m
+[2m19:39:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/Datasource.vue[22m
+[2m19:42:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/index.vue, /src/views/system/appearance/index.vue?vue&type=style&index=0&scoped=152eea28&lang.less[22m
+[2m19:42:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m19:42:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m19:42:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m19:42:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m19:49:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ThemeSwitcher.vue, /src/components/layout/ThemeSwitcher.vue?vue&type=style&index=0&scoped=3cfe5f0a&lang.less, /src/components/layout/ThemeSwitcher.vue?vue&type=style&index=1&lang.less[22m
+[2m19:49:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ThemeSwitcher.vue, /src/components/layout/ThemeSwitcher.vue?vue&type=style&index=0&scoped=3cfe5f0a&lang.less, /src/components/layout/ThemeSwitcher.vue?vue&type=style&index=1&lang.less[22m
+[2m19:50:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m19:50:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m19:50:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Menu.vue?vue&type=style&index=0&lang.less[22m
+[2m19:54:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ProjectSelector.vue?vue&type=style&index=0&scoped=93423744&lang.less, /src/components/layout/ProjectSelector.vue?vue&type=style&index=1&lang.less[22m
+[2m19:54:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ThemeSwitcher.vue, /src/components/layout/ThemeSwitcher.vue?vue&type=style&index=0&scoped=3cfe5f0a&lang.less[22m
+[2m19:54:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Person.vue, /src/components/layout/Person.vue?vue&type=style&index=0&scoped=89eb3129&lang.less, /src/components/layout/Person.vue?vue&type=style&index=1&lang.less[22m
+[2m19:54:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Menu.vue?vue&type=style&index=0&lang.less[22m
+[2m20:05:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m20:05:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:05:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ThemeSwitcher.vue[22m
+[2m20:05:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m20:05:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m20:05:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/excel-upload/Uploader.vue[22m
+[2m20:06:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/training/index.vue[22m
+[2m20:06:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/training/index.vue[22m
+[2m20:06:54[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/training/index.vue[22m
+[2m20:07:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:07:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:07:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:08:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:08:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:08:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:08:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:12:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/excel-upload/Uploader.vue[22m
+[2m20:14:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue?vue&type=style&index=0&scoped=39a51454&lang.less, /src/views/chat/index.vue?vue&type=style&index=1&lang.less[22m
+[2m20:14:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatListContainer.vue?vue&type=style&index=0&scoped=f307421a&lang.less[22m
+[2m20:14:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatList.vue, /src/views/chat/ChatList.vue?vue&type=style&index=0&scoped=b5b4251f&lang.less, /src/views/chat/ChatList.vue?vue&type=style&index=1&lang.less[22m
+[2m20:14:48[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m20:15:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:20:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:20:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue?vue&type=style&index=0&scoped=39a51454&lang.less, /src/views/chat/index.vue?vue&type=style&index=1&lang.less[22m
+[2m20:20:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatListContainer.vue?vue&type=style&index=0&scoped=f307421a&lang.less[22m
+[2m20:20:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatList.vue?vue&type=style&index=0&scoped=b5b4251f&lang.less, /src/views/chat/ChatList.vue?vue&type=style&index=1&lang.less[22m
+[2m20:20:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m20:26:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewShow.vue?vue&type=style&index=0&lang.less[22m
+[2m20:28:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue?vue&type=style&index=0&scoped=ac5dd9dd&lang.less[22m
+[2m20:28:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:32:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m20:41:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:42:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewSingle.vue[22m
+[2m20:42:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:47:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Person.vue[22m
+[2m20:47:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m20:53:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Person.vue[22m
+[2m20:53:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/index.vue[22m
+[2m20:53:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/Person.vue[22m
+[2m20:54:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/index.vue[22m
+[2m20:57:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/user.ts[22m
+[2m20:57:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m20:57:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/about/index.vue[22m
+[2m20:58:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m20:58:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m20:58:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m20:58:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m21:08:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/ProjectUserDialog.vue[22m
+[2m21:08:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/permission/SelectPermission.vue[22m
+[2m21:10:51[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/watch.ts[22m
+[2m21:11:00[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m21:11:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/api/login.ts[22m
+[2m21:11:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/model/Model.vue, /src/views/system/user/SyncUserDing.vue[22m
+[2m21:11:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m21:11:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Handler.vue[22m
+[2m21:11:54[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/parameter/xpack/PlatformParam.vue[22m
+[2m21:13:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/request.ts[22m
+[2m21:15:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m21:17:08[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Handler.vue[22m
+[2m21:18:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Handler.vue[22m
+[2m21:34:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m21:34:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/request.ts[22m
+[2m21:34:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/parameter/index.vue[22m
+[2m21:34:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue, /src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m21:35:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/model/Model.vue, /src/views/system/user/SyncUserDing.vue[22m
+[2m21:35:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m21:37:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m21:37:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m21:38:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m21:39:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/editor/index.vue, /src/views/chat/index.vue, /src/components/layout/ProjectSelector.vue, /src/views/dashboard/editor/Toolbar.vue, /src/views/analysis-assistant/AnalysisAssistantDock.vue, /src/views/chat/ChatCreator.vue, /src/views/dashboard/preview/SQPreviewSingle.vue, /src/views/dashboard/preview/SQPreviewShow.vue, /src/views/dashboard/common/ResourceGroupOpt.vue, /src/views/dashboard/canvas/CanvasCore.vue, /src/views/dashboard/common/AddViewDashboard.vue, /src/views/dashboard/editor/ChatChartSelection.vue, /src/views/dashboard/common/ResourceTree.vue, /src/views/system/training/index.vue, /src/views/system/professional/index.vue[22m
+[2m21:39:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/SyncUserDing.vue, /src/views/system/user/SyncUserDing.vue?vue&type=style&index=0&lang.less[22m
+[2m21:39:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue[22m
+[2m21:39:56[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/preview/SQPreviewShow.vue[22m
+[2m21:40:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue[22m
+[2m21:40:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/ProjectSelector.vue[22m
+[2m21:40:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue[22m
+[2m21:42:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue?vue&type=style&index=1&lang.less[22m
+[2m21:46:56[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/dashboard/common/ResourceTree.vue[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/about/index.vue[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/about/index.vue[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Cas.vue, /src/views/login/xpack/Cas.vue?vue&type=style&index=0&scoped=e81bd519&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/DingtalkQr.vue, /src/views/login/xpack/DingtalkQr.vue?vue&type=style&index=0&scoped=0e3e819d&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Handler.vue, /src/views/login/xpack/Handler.vue?vue&type=style&index=0&scoped=876eecd7&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/LarkQr.vue, /src/views/login/xpack/LarkQr.vue?vue&type=style&index=0&scoped=4d00e67e&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/LarksuiteQr.vue, /src/views/login/xpack/LarksuiteQr.vue?vue&type=style&index=0&scoped=5216d3ac&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/LdapLoginForm.vue, /src/views/login/xpack/LdapLoginForm.vue?vue&type=style&index=0&scoped=f2531593&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Oauth2.vue, /src/views/login/xpack/Oauth2.vue?vue&type=style&index=0&scoped=8ce6cf93&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/Oidc.vue, /src/views/login/xpack/Oidc.vue?vue&type=style&index=0&scoped=60aad6cb&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/views/login/xpack/PlatformClient.ts[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/views/login/xpack/platformUtils.ts[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/QrcodeLdap.vue, /src/views/login/xpack/QrcodeLdap.vue?vue&type=style&index=0&scoped=ea228475&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/QrTab.vue, /src/views/login/xpack/QrTab.vue?vue&type=style&index=0&scoped=65db5381&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/xpack/WecomQr.vue, /src/views/login/xpack/WecomQr.vue?vue&type=style&index=0&scoped=020ecb7b&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/platform/index.vue, /src/views/system/platform/index.vue?vue&type=style&index=0&scoped=ab546102&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/platform/PlatformForm.vue, /src/views/system/platform/PlatformForm.vue?vue&type=style&index=0&lang.less, /src/views/system/platform/PlatformForm.vue?vue&type=style&index=1&scoped=5d7427f5&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/platform/PlatformInfo.vue, /src/views/system/platform/PlatformInfo.vue?vue&type=style&index=0&scoped=988985fb&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/platform/common/InfoTemplate.vue, /src/views/system/platform/common/InfoTemplate.vue?vue&type=style&index=0&scope=true&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/views/system/platform/common/SettingTemplate.ts[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/CasEditor.vue, /src/views/system/authentication/CasEditor.vue?vue&type=style&index=0&lang.less, /src/views/system/authentication/CasEditor.vue?vue&type=style&index=1&scoped=42fe94fd&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/index.vue, /src/views/system/authentication/index.vue?vue&type=style&index=0&scoped=3a09cf02&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/LdapEditor.vue, /src/views/system/authentication/LdapEditor.vue?vue&type=style&index=0&lang.less, /src/views/system/authentication/LdapEditor.vue?vue&type=style&index=1&scoped=914f6b3d&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/Oauth2Editor.vue, /src/views/system/authentication/Oauth2Editor.vue?vue&type=style&index=0&lang.less, /src/views/system/authentication/Oauth2Editor.vue?vue&type=style&index=1&scoped=33c8d8ea&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/OidcEditor.vue, /src/views/system/authentication/OidcEditor.vue?vue&type=style&index=0&lang.less, /src/views/system/authentication/OidcEditor.vue?vue&type=style&index=1&scoped=54d57eb6&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/authentication/SAML2Editor.vue, /src/views/system/authentication/SAML2Editor.vue?vue&type=style&index=0&lang.less, /src/views/system/authentication/SAML2Editor.vue?vue&type=style&index=1&scoped=8cf1e96e&lang.less[22m
+[2m21:51:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/parameter/xpack/PlatformParam.vue, /src/views/system/parameter/xpack/PlatformParam.vue?vue&type=style&index=0&scoped=75f8f50b&lang.less[22m
+[2m21:53:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/prompt/index.vue[22m
+[2m21:56:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/request.ts[22m
+[2m22:18:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m22:18:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/index.vue, /src/views/system/appearance/index.vue?vue&type=style&index=0&scoped=152eea28&lang.less[22m
+[2m22:18:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/LoginPreview.vue, /src/views/system/appearance/LoginPreview.vue?vue&type=style&index=0&scoped=075db52f&lang.less[22m
+[2m22:18:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/appearance/Person.vue, /src/views/system/appearance/Person.vue?vue&type=style&index=0&scoped=56a5d7c3&lang.less, /src/views/system/appearance/Person.vue?vue&type=style&index=1&lang.less[22m
+[2m22:19:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/appearance.ts[22m
+[2m22:20:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m22:20:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m22:20:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m22:20:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m22:29:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m22:31:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m22:34:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/permission/index.vue[22m
+[2m22:34:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/permission/index.vue[22m
+[2m22:34:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/permission/index.vue?vue&type=style&index=1&lang.less[22m
+[2m22:35:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m22:35:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m22:35:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m22:35:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m22:38:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m22:38:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m22:38:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m22:38:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m22:40:02[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m22:40:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m22:40:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m22:40:46[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m22:40:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m22:49:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m22:52:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m22:54:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m22:58:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
