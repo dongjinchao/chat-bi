@@ -121,3 +121,424 @@ Traceback (most recent call last):
   File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
     raise HTTPException(status_code=404)
 starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 23:26:15,266 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 23:26:24,311 - apps.db.db - INFO:190 - success
+2026-06-14 23:26:24,311 - apps.datasource.api.datasource - ERROR:360 - Preview failed: (psycopg2.errors.UndefinedColumn) 错误:  字段 "event_time" 不存在
+LINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...
+                             ^
+
+[SQL: SELECT "upgrade_id", "event_time", "event_date", "player_id", "server_id", "session_id", "building_type", "from_level", "to_level", "duration_seconds", "speedup_seconds", "power_gain", "cost_json" FROM "public"."fact_building_upgrades" 
+             
+            LIMIT 100]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: 错误:  字段 "event_time" 不存在
+LINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\datasource\api\datasource.py", line 354, in inner
+    @require_permissions(permission=SqlbotPermission(role=['admin']))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\datasource.py", line 379, in preview
+    return exec_sql(ds, sql, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\db\db.py", line 596, in exec_sql
+    with session.execute(text(sql)) as result:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2372, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2279, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) 错误:  字段 "event_time" 不存在
+LINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...
+                             ^
+
+[SQL: SELECT "upgrade_id", "event_time", "event_date", "player_id", "server_id", "session_id", "building_type", "from_level", "to_level", "duration_seconds", "speedup_seconds", "power_gain", "cost_json" FROM "public"."fact_building_upgrades" 
+             
+            LIMIT 100]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-14 23:26:24,316 - common.core.response_middleware - ERROR:103 - HTTP Exception: Preview Failed: ('(psycopg2.errors.UndefinedColumn) 错误:  字段 "event_time" 不存在\nLINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...\n                             ^\n',)
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: 错误:  字段 "event_time" 不存在
+LINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\datasource\api\datasource.py", line 354, in inner
+    @require_permissions(permission=SqlbotPermission(role=['admin']))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\datasource\crud\datasource.py", line 379, in preview
+    return exec_sql(ds, sql, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\db\db.py", line 596, in exec_sql
+    with session.execute(text(sql)) as result:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2372, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2279, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) 错误:  字段 "event_time" 不存在
+LINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...
+                             ^
+
+[SQL: SELECT "upgrade_id", "event_time", "event_date", "player_id", "server_id", "session_id", "building_type", "from_level", "to_level", "duration_seconds", "speedup_seconds", "power_gain", "cost_json" FROM "public"."fact_building_upgrades" 
+             
+            LIMIT 100]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\system\schemas\permission.py", line 178, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\datasource\api\datasource.py", line 363, in preview_data
+  File "C:\Users\ELEX-GM0298\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ELEX-GM0298\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\datasource\api\datasource.py", line 361, in inner
+    async def edit_table(session: SessionDep, table: CoreTable):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fastapi.exceptions.HTTPException: 500: Preview Failed: ('(psycopg2.errors.UndefinedColumn) 错误:  字段 "event_time" 不存在\nLINE 1: SELECT "upgrade_id", "event_time", "event_date", "player_id"...\n                             ^\n',)
+2026-06-14 23:33:29,958 - apps.db.db - INFO:190 - success
+2026-06-14 23:33:30,472 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.379923 seconds
+2026-06-14 23:33:30,854 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.933346 seconds
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 207, in handle_request
+    raise UnsupportedProtocol(
+httpcore.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    response = self._send_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\ELEX-GM0298\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1516, in run_recommend_questions_task
+    for chunk in res:
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 572, in generate_recommend_questions_task
+    for chunk in res:
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1807, in process_stream
+    for chunk in res:
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 522, in stream
+    for chunk in self._stream(input_messages, stop=stop, **kwargs):
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\openai\llm.py", line 116, in _stream
+    for chunk in super()._stream(*args, **kwargs):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1123, in _stream
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1251, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1072, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-06-14 23:48:35,332 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-14 23:57:55,215 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-15 00:20:53,689 - common.core.response_middleware - ERROR:103 - HTTP Exception: Not Found
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 764, in app
+    await self.default(scope, receive, send)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\starlette\routing.py", line 650, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException: 404: Not Found
+2026-06-15 01:04:06,379 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.480894 seconds
+2026-06-15 01:04:06,862 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.926511 seconds
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 207, in handle_request
+    raise UnsupportedProtocol(
+httpcore.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    response = self._send_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\ELEX-GM0298\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1516, in run_recommend_questions_task
+    for chunk in self.run_recommend_questions_task():
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 572, in generate_recommend_questions_task
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1807, in process_stream
+    end_tag: str = settings.DEFAULT_REASONING_CONTENT_END
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 522, in stream
+    for chunk in self._stream(input_messages, stop=stop, **kwargs):
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\openai\llm.py", line 116, in _stream
+    for chunk in super()._stream(*args, **kwargs):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1123, in _stream
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1251, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1072, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-06-15 01:04:16,441 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.471054 seconds
+2026-06-15 01:04:16,914 - openai._base_client - INFO:1129 - Retrying request to /chat/completions in 0.838847 seconds
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 207, in handle_request
+    raise UnsupportedProtocol(
+httpcore.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    response = self._send_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\ELEX-GM0298\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.UnsupportedProtocol: Request URL is missing an 'http://' or 'https://' protocol.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1516, in run_recommend_questions_task
+    for chunk in self.run_recommend_questions_task():
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 572, in generate_recommend_questions_task
+  File "D:\work\AI\SQLBot\backend\apps\chat\task\llm.py", line 1807, in process_stream
+    end_tag: str = settings.DEFAULT_REASONING_CONTENT_END
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 522, in stream
+    for chunk in self._stream(input_messages, stop=stop, **kwargs):
+  File "D:\work\AI\SQLBot\backend\apps\ai_model\openai\llm.py", line 116, in _stream
+    for chunk in super()._stream(*args, **kwargs):
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1123, in _stream
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1251, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\AI\SQLBot\backend\.venv\Lib\site-packages\openai\_base_client.py", line 1072, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.

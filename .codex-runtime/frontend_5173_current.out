@@ -224,3 +224,29 @@ development
 [2m22:52:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
 [2m22:54:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
 [2m22:58:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/login/index.vue?vue&type=style&index=0&scoped=2bf2fc29&lang.less[22m
+[2m23:06:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m23:08:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m23:11:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue, /src/views/analysis-assistant/AnalysisAssistantDock.vue[22m
+[2m23:11:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue, /src/views/analysis-assistant/AnalysisAssistantDock.vue[22m
+[2m23:11:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m23:12:21[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/stores/user.ts[22m
+[2m23:12:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m23:12:58[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue[22m
+[2m23:13:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/user/User.vue?vue&type=style&index=1&lang.less[22m
+[2m23:13:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-CN.json[22m
+[2m23:13:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/en.json[22m
+[2m23:14:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/zh-TW.json[22m
+[2m23:14:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/i18n/ko-KR.json[22m
+[2m23:14:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/ProjectUserDialog.vue[22m
+[2m23:14:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/training/index.vue[22m
+[2m23:15:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/watch.ts[22m
+[2m23:16:03[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/Person.vue[22m
+[2m23:16:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/layout/LayoutDsl.vue?vue&type=style&index=0&scoped=1e8b5e40&lang.less[22m
+[2m23:16:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/Datasource.vue[22m
+[2m23:16:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.less[22m
+[2m23:16:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/system/professional/index.vue[22m
+[2m23:17:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/TableRelationship.vue[22m
+[2m23:18:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/ds/TableRelationship.vue[22m
+[2m23:18:13[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue, /src/views/chat/ChatListContainer.vue[22m
+[2m23:18:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/ChatListContainer.vue?vue&type=style&index=0&scoped=f307421a&lang.less[22m
+[2m23:18:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/chat/index.vue?vue&type=style&index=0&scoped=39a51454&lang.less[22m
