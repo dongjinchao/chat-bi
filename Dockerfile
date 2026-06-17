@@ -1,6 +1,9 @@
+# syntax=docker/dockerfile:1.7
 # Build sqlbot
+ARG SQLBOT_BASE_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest
+ARG SQLBOT_RUNTIME_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-python-pg:latest
 FROM ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1 AS vector-model
-FROM --platform=${BUILDPLATFORM} registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest AS sqlbot-ui-builder
+FROM --platform=${BUILDPLATFORM} ${SQLBOT_BASE_IMAGE} AS sqlbot-ui-builder
 ENV SQLBOT_HOME=/opt/sqlbot
 ENV APP_HOME=${SQLBOT_HOME}/app
 ENV UI_HOME=${SQLBOT_HOME}/frontend
@@ -8,11 +11,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN mkdir -p ${APP_HOME} ${UI_HOME}
 
+COPY frontend/package*.json /tmp/frontend/
+RUN --mount=type=cache,target=/root/.npm \
+    cd /tmp/frontend && npm ci --no-audit --no-fund
 COPY frontend /tmp/frontend
-RUN cd /tmp/frontend && npm install && npm run build && mv dist ${UI_HOME}/dist
+RUN cd /tmp/frontend && npm run build && mv dist ${UI_HOME}/dist
 
 
-FROM registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest AS sqlbot-builder
+FROM ${SQLBOT_BASE_IMAGE} AS sqlbot-builder
 # Set build environment variables
 ENV PYTHONUNBUFFERED=1
 ENV SQLBOT_HOME=/opt/sqlbot
@@ -31,20 +37,18 @@ WORKDIR ${APP_HOME}
 
 COPY  --from=sqlbot-ui-builder ${UI_HOME} ${UI_HOME}
 # Install dependencies
-RUN test -f "./uv.lock" && \
-    --mount=type=cache,target=/root/.cache/uv \
-    --mount=type=bind,source=backend/uv.lock,target=uv.lock \
-    --mount=type=bind,source=backend/pyproject.toml,target=pyproject.toml \
-    uv sync --frozen --no-install-project || echo "uv.lock file not found, skipping intermediate-layers"
+COPY backend/pyproject.toml backend/uv.lock ${APP_HOME}/
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-install-project --extra cpu
 
 COPY ./backend ${APP_HOME}
 
 # Final sync to ensure all dependencies are installed
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --extra cpu
+    uv sync --frozen --extra cpu
 
 # Build g2-ssr
-FROM registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest AS ssr-builder
+FROM ${SQLBOT_BASE_IMAGE} AS ssr-builder
 
 WORKDIR /app
 
@@ -60,12 +64,14 @@ RUN npm config set fund false \
     && npm config set audit false \
     && npm config set progress false
 
-COPY g2-ssr/app.js g2-ssr/package.json /app/
+COPY g2-ssr/package*.json /app/
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci --no-audit --no-fund
+COPY g2-ssr/app.js /app/
 COPY g2-ssr/charts/* /app/charts/
-RUN npm install
 
 # Runtime stage
-FROM registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-python-pg:latest
+FROM ${SQLBOT_RUNTIME_IMAGE}
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone
@@ -95,6 +101,6 @@ EXPOSE 3000 8000 8001 5432
 
 # Add health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD python3 -c "import os, urllib.request; urllib.request.urlopen(f'http://localhost:8000/{os.environ.get(\"CONTEXT_PATH\", \"\")}', timeout=3)" || exit 1
+    CMD python3 -c "import os, urllib.request; path=os.environ.get('CONTEXT_PATH', '').rstrip('/') + '/openapi.json'; urllib.request.urlopen('http://localhost:8000' + path, timeout=3)" || exit 1
 
 ENTRYPOINT ["sh", "start.sh"]
