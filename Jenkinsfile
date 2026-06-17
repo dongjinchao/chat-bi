@@ -10,10 +10,6 @@ pipeline {
   parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Git 分支')
     string(name: 'IMAGE_TAG', defaultValue: '', description: '镜像标签，留空时使用 BUILD_NUMBER-git短哈希')
-    string(name: 'FRONTEND_HOST', defaultValue: '10.1.5.193', description: '前端访问主机/IP，用于生成前端接口地址')
-    string(name: 'FRONTEND_PORT', defaultValue: '5173', description: '前端页面访问端口')
-    string(name: 'WEB_PORT', defaultValue: '8000', description: 'Web 访问端口')
-    string(name: 'MCP_PORT', defaultValue: '8001', description: 'MCP 服务端口')
   }
 
   environment {
@@ -24,6 +20,10 @@ pipeline {
     IMAGE_REPOSITORY = 'chat-bi/sqlbot'
     SQLBOT_BASE_IMAGE = 'registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest'
     SQLBOT_RUNTIME_IMAGE = 'registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-python-pg:latest'
+    FRONTEND_HOST = '10.1.5.193'
+    FRONTEND_PORT = '5173'
+    WEB_PORT = '8000'
+    MCP_PORT = '8001'
   }
 
   stages {
@@ -42,7 +42,7 @@ pipeline {
           env.IMAGE_TAR = "${env.APP_HOME}/chat-bi-${env.EFFECTIVE_IMAGE_TAG}.tar"
           env.BUILD_AT = sh(script: "TZ=Asia/Shanghai date +'%Y-%m-%dT%H:%M'", returnStdout: true).trim()
           env.GITHUB_COMMIT = shortCommit
-          env.FRONTEND_API_BASE_URL = "http://${params.FRONTEND_HOST}:${params.WEB_PORT}/api/v1"
+          env.FRONTEND_API_BASE_URL = "http://${env.FRONTEND_HOST}:${env.WEB_PORT}/api/v1"
         }
         sh '''
           set -eux
