@@ -103,6 +103,8 @@ pipeline {
             -v "$APP_HOME/data/sqlbot/logs:/opt/sqlbot/app/logs" \
             -v "$APP_HOME/data/postgresql:/var/lib/postgresql/data" \
             -e SECRET_KEY="${SECRET_KEY:-jenkins-chat-bi-secret}" \
+            -e FRONTEND_HOST="http://${FRONTEND_HOST}:${FRONTEND_PORT}" \
+            -e BACKEND_CORS_ORIGINS="http://${FRONTEND_HOST}:${FRONTEND_PORT}" \
             -e LOG_DIR="/opt/sqlbot/app/logs" \
             -e LOG_FORMAT="%(asctime)s - %(name)s - %(levelname)s:%(lineno)d - %(message)s" \
             "$IMAGE"

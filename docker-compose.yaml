@@ -24,7 +24,8 @@ services:
       # Auth & Security
       SECRET_KEY: "${SECRET_KEY:-y5txe1mRmS_JpOrUzFzHEu-kIQn3lf7ll0AOv9DQh0s}"
       # CORS settings
-      BACKEND_CORS_ORIGINS: "http://localhost,http://localhost:5173,https://localhost,https://localhost:5173"
+      FRONTEND_HOST: "${FRONTEND_HOST:-http://localhost:5173}"
+      BACKEND_CORS_ORIGINS: "${BACKEND_CORS_ORIGINS:-http://localhost,http://localhost:5173,http://10.1.5.193:5173,https://localhost,https://localhost:5173}"
       # Logging
       LOG_LEVEL: "INFO"
       LOG_DIR: "/opt/sqlbot/app/logs"
