@@ -10,14 +10,12 @@ pipeline {
   parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Git 分支')
     string(name: 'IMAGE_TAG', defaultValue: '', description: '镜像标签，留空时使用 BUILD_NUMBER-git短哈希')
-    string(name: 'PLATFORM', defaultValue: 'linux/amd64', description: '构建平台，--load 只支持单平台，例如 linux/amd64')
     string(name: 'WEB_PORT', defaultValue: '8000', description: 'Web 访问端口')
     string(name: 'MCP_PORT', defaultValue: '8001', description: 'MCP 服务端口')
   }
 
   environment {
     DOCKER_BUILDKIT = '1'
-    BUILDX_BUILDER = 'chat-bi-jenkins-builder'
     GIT_URL = 'https://github.com/dongjinchao/chat-bi.git'
     APP_HOME = '/home/chai-bi'
     CONTAINER_NAME = 'chat-bi'
@@ -36,9 +34,6 @@ pipeline {
     stage('准备构建参数') {
       steps {
         script {
-          if (params.PLATFORM.contains(',')) {
-            error('当前流水线使用 docker buildx build --load，只支持单平台构建，请把 PLATFORM 设置为 linux/amd64 这类单个平台。')
-          }
           def shortCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
           env.EFFECTIVE_IMAGE_TAG = params.IMAGE_TAG?.trim() ? params.IMAGE_TAG.trim() : "${env.BUILD_NUMBER}-${shortCommit}"
           env.IMAGE = "${env.IMAGE_REPOSITORY}:${env.EFFECTIVE_IMAGE_TAG}"
@@ -52,13 +47,6 @@ pipeline {
           command -v docker
           command -v curl
           docker version
-          if docker buildx version >/dev/null 2>&1; then
-            docker buildx inspect "$BUILDX_BUILDER" >/dev/null 2>&1 || docker buildx create --name "$BUILDX_BUILDER" --use
-            docker buildx use "$BUILDX_BUILDER"
-            docker buildx inspect --bootstrap "$BUILDX_BUILDER"
-          else
-            echo "当前 Jenkins 节点未安装 Docker Buildx，将回退使用 docker build。"
-          fi
           if ! mkdir -p "$APP_HOME" "$APP_HOME/data/sqlbot/excel" "$APP_HOME/data/sqlbot/file" "$APP_HOME/data/sqlbot/images" "$APP_HOME/data/sqlbot/logs" "$APP_HOME/data/postgresql"; then
             echo "Jenkins 用户没有 $APP_HOME 写入权限，请先在 Linux 服务器执行：sudo mkdir -p $APP_HOME && sudo chown -R $(id -u):$(id -g) $APP_HOME"
             exit 1
@@ -72,25 +60,13 @@ pipeline {
       steps {
         sh '''
           set -eux
-          if docker buildx version >/dev/null 2>&1; then
-            docker buildx build \
-              --platform "$PLATFORM" \
-              --load \
-              --tag "$IMAGE" \
-              --build-arg BUILD_AT="$BUILD_AT" \
-              --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
-              --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
-              --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
-              .
-          else
-            DOCKER_BUILDKIT=0 docker build \
-              --tag "$IMAGE" \
-              --build-arg BUILD_AT="$BUILD_AT" \
-              --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
-              --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
-              --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
-              .
-          fi
+          docker build \
+            --tag "$IMAGE" \
+            --build-arg BUILD_AT="$BUILD_AT" \
+            --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
+            --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
+            --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
+            .
         '''
       }
     }
