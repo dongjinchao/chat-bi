@@ -18,7 +18,7 @@ pipeline {
   environment {
     DOCKER_BUILDKIT = '1'
     BUILDX_BUILDER = 'chat-bi-jenkins-builder'
-    GIT_URL = 'https://github.com/NAN-Xiao/chat-bi.git'
+    GIT_URL = 'https://github.com/dongjinchao/chat-bi.git'
     APP_HOME = '/home/chai-bi'
     CONTAINER_NAME = 'chat-bi'
     IMAGE_REPOSITORY = 'chat-bi/sqlbot'
@@ -52,10 +52,13 @@ pipeline {
           command -v docker
           command -v curl
           docker version
-          docker buildx version
-          docker buildx inspect "$BUILDX_BUILDER" >/dev/null 2>&1 || docker buildx create --name "$BUILDX_BUILDER" --use
-          docker buildx use "$BUILDX_BUILDER"
-          docker buildx inspect --bootstrap "$BUILDX_BUILDER"
+          if docker buildx version >/dev/null 2>&1; then
+            docker buildx inspect "$BUILDX_BUILDER" >/dev/null 2>&1 || docker buildx create --name "$BUILDX_BUILDER" --use
+            docker buildx use "$BUILDX_BUILDER"
+            docker buildx inspect --bootstrap "$BUILDX_BUILDER"
+          else
+            echo "当前 Jenkins 节点未安装 Docker Buildx，将回退使用 docker build。"
+          fi
           if ! mkdir -p "$APP_HOME" "$APP_HOME/data/sqlbot/excel" "$APP_HOME/data/sqlbot/file" "$APP_HOME/data/sqlbot/images" "$APP_HOME/data/sqlbot/logs" "$APP_HOME/data/postgresql"; then
             echo "Jenkins 用户没有 $APP_HOME 写入权限，请先在 Linux 服务器执行：sudo mkdir -p $APP_HOME && sudo chown -R $(id -u):$(id -g) $APP_HOME"
             exit 1
@@ -69,15 +72,25 @@ pipeline {
       steps {
         sh '''
           set -eux
-          docker buildx build \
-            --platform "$PLATFORM" \
-            --load \
-            --tag "$IMAGE" \
-            --build-arg BUILD_AT="$BUILD_AT" \
-            --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
-            --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
-            --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
-            .
+          if docker buildx version >/dev/null 2>&1; then
+            docker buildx build \
+              --platform "$PLATFORM" \
+              --load \
+              --tag "$IMAGE" \
+              --build-arg BUILD_AT="$BUILD_AT" \
+              --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
+              --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
+              --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
+              .
+          else
+            docker build \
+              --tag "$IMAGE" \
+              --build-arg BUILD_AT="$BUILD_AT" \
+              --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \
+              --build-arg SQLBOT_BASE_IMAGE="$SQLBOT_BASE_IMAGE" \
+              --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
+              .
+          fi
         '''
       }
     }
@@ -122,7 +135,11 @@ pipeline {
           done
 
           echo "Docker 容器最近 300 行日志："
-          docker logs --tail=300 "$CONTAINER_NAME" || true
+          if docker ps -a --format '{{.Names}}' | grep -Fx "$CONTAINER_NAME" >/dev/null; then
+            docker logs --tail=300 "$CONTAINER_NAME" || true
+          else
+            echo "容器 $CONTAINER_NAME 不存在，跳过容器日志收集。"
+          fi
           echo "应用日志目录最近 300 行日志："
           for log_file in "$APP_HOME"/data/sqlbot/logs/*.log; do
             if [ -f "$log_file" ]; then
@@ -144,7 +161,11 @@ pipeline {
       sh '''
         set +e
         echo "Docker 容器最近 300 行日志："
-        docker logs --tail=300 "$CONTAINER_NAME"
+        if docker ps -a --format '{{.Names}}' | grep -Fx "$CONTAINER_NAME" >/dev/null; then
+          docker logs --tail=300 "$CONTAINER_NAME"
+        else
+          echo "容器 $CONTAINER_NAME 不存在，跳过容器日志收集。"
+        fi
         echo "应用日志目录最近 300 行日志："
         for log_file in "$APP_HOME"/data/sqlbot/logs/*.log; do
           if [ -f "$log_file" ]; then
