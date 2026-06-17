@@ -131,6 +131,48 @@ pipeline {
         '''
       }
     }
+
+    stage('清理旧镜像') {
+      steps {
+        sh '''
+          set -eu
+          KEEP_COUNT=3
+          RUNNING_IMAGE_ID="$(docker inspect --format='{{.Image}}' "$CONTAINER_NAME" 2>/dev/null || true)"
+
+          docker images "$IMAGE_REPOSITORY" --format '{{.Repository}}:{{.Tag}} {{.ID}} {{.CreatedAt}}' \
+            | sort -k3,4r \
+            | awk -v keep="$KEEP_COUNT" -v running_id="$RUNNING_IMAGE_ID" '
+                NR <= keep {
+                  print "保留镜像：" $1
+                  next
+                }
+                running_id != "" && index(running_id, $2) > 0 {
+                  print "跳过运行中镜像：" $1
+                  next
+                }
+                {
+                  print $1
+                }
+              ' \
+            | while IFS= read -r image; do
+                case "$image" in
+                  保留镜像：*|跳过运行中镜像：*)
+                    echo "$image"
+                    ;;
+                  "")
+                    ;;
+                  *)
+                    echo "删除旧镜像：$image"
+                    docker rmi "$image" || true
+                    ;;
+                esac
+              done
+
+          echo "当前保留的 $IMAGE_REPOSITORY 镜像："
+          docker images "$IMAGE_REPOSITORY"
+        '''
+      }
+    }
   }
 
   post {
