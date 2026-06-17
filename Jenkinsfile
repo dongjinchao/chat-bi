@@ -83,7 +83,7 @@ pipeline {
               --build-arg SQLBOT_RUNTIME_IMAGE="$SQLBOT_RUNTIME_IMAGE" \
               .
           else
-            docker build \
+            DOCKER_BUILDKIT=0 docker build \
               --tag "$IMAGE" \
               --build-arg BUILD_AT="$BUILD_AT" \
               --build-arg GITHUB_COMMIT="$GITHUB_COMMIT" \

@@ -1,9 +1,8 @@
-# syntax=docker/dockerfile:1.7
 # Build sqlbot
 ARG SQLBOT_BASE_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:latest
 ARG SQLBOT_RUNTIME_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-python-pg:latest
 FROM ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1 AS vector-model
-FROM --platform=${BUILDPLATFORM} ${SQLBOT_BASE_IMAGE} AS sqlbot-ui-builder
+FROM ${SQLBOT_BASE_IMAGE} AS sqlbot-ui-builder
 ENV SQLBOT_HOME=/opt/sqlbot
 ENV APP_HOME=${SQLBOT_HOME}/app
 ENV UI_HOME=${SQLBOT_HOME}/frontend
@@ -12,8 +11,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN mkdir -p ${APP_HOME} ${UI_HOME}
 
 COPY frontend/package*.json /tmp/frontend/
-RUN --mount=type=cache,target=/root/.npm \
-    cd /tmp/frontend && npm ci --no-audit --no-fund
+RUN cd /tmp/frontend && npm ci --no-audit --no-fund
 COPY frontend /tmp/frontend
 RUN cd /tmp/frontend && npm run build && mv dist ${UI_HOME}/dist
 
@@ -38,14 +36,12 @@ WORKDIR ${APP_HOME}
 COPY  --from=sqlbot-ui-builder ${UI_HOME} ${UI_HOME}
 # Install dependencies
 COPY backend/pyproject.toml backend/uv.lock ${APP_HOME}/
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-install-project --extra cpu
+RUN uv sync --frozen --no-install-project --extra cpu
 
 COPY ./backend ${APP_HOME}
 
 # Final sync to ensure all dependencies are installed
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --extra cpu
+RUN uv sync --frozen --extra cpu
 
 # Build g2-ssr
 FROM ${SQLBOT_BASE_IMAGE} AS ssr-builder
@@ -65,8 +61,7 @@ RUN npm config set fund false \
     && npm config set progress false
 
 COPY g2-ssr/package*.json /app/
-RUN --mount=type=cache,target=/root/.npm \
-    npm ci --no-audit --no-fund
+RUN npm ci --no-audit --no-fund
 COPY g2-ssr/app.js /app/
 COPY g2-ssr/charts/* /app/charts/
 
