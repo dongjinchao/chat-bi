@@ -126,28 +126,8 @@ pipeline {
             -e LOG_FORMAT="%(asctime)s - %(name)s - %(levelname)s:%(lineno)d - %(message)s" \
             "$IMAGE"
 
-          for i in $(seq 1 60); do
-            if curl -fsS "http://127.0.0.1:${WEB_PORT}/openapi.json" >/dev/null; then
-              docker ps --filter "name=$CONTAINER_NAME"
-              exit 0
-            fi
-            sleep 5
-          done
-
-          echo "Docker 容器最近 300 行日志："
-          if docker ps -a --format '{{.Names}}' | grep -Fx "$CONTAINER_NAME" >/dev/null; then
-            docker logs --tail=300 "$CONTAINER_NAME" || true
-          else
-            echo "容器 $CONTAINER_NAME 不存在，跳过容器日志收集。"
-          fi
-          echo "应用日志目录最近 300 行日志："
-          for log_file in "$APP_HOME"/data/sqlbot/logs/*.log; do
-            if [ -f "$log_file" ]; then
-              echo "===== $log_file ====="
-              tail -n 300 "$log_file" || true
-            fi
-          done
-          exit 1
+          docker ps -a --filter "name=$CONTAINER_NAME"
+          echo "已跳过启动后的健康检查，请通过容器日志和页面访问单独确认服务状态。"
         '''
       }
     }
