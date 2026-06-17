@@ -17,7 +17,7 @@ pipeline {
   }
 
   environment {
-    DOCKER_BUILDKIT = '1'
+    DOCKER_BUILDKIT = '0'
     GIT_URL = 'https://github.com/dongjinchao/chat-bi.git'
     APP_HOME = '/home/chai-bi'
     CONTAINER_NAME = 'chat-bi'
