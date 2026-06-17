@@ -3,9 +3,11 @@ ARG SQLBOT_BASE_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-base:late
 ARG SQLBOT_RUNTIME_IMAGE=registry.cn-qingdao.aliyuncs.com/dataease/sqlbot-python-pg:latest
 FROM ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1 AS vector-model
 FROM ${SQLBOT_BASE_IMAGE} AS sqlbot-ui-builder
+ARG VITE_API_BASE_URL=./api/v1
 ENV SQLBOT_HOME=/opt/sqlbot
 ENV APP_HOME=${SQLBOT_HOME}/app
 ENV UI_HOME=${SQLBOT_HOME}/frontend
+ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN mkdir -p ${APP_HOME} ${UI_HOME}
@@ -92,6 +94,6 @@ WORKDIR ${SQLBOT_HOME}/app
 
 RUN mkdir -p /opt/sqlbot/images /opt/sqlbot/g2-ssr
 
-EXPOSE 3000 8000 8001 5432
+EXPOSE 3000 5173 8000 8001 5432
 
 ENTRYPOINT ["sh", "start.sh"]
