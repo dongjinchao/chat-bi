@@ -13,7 +13,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN mkdir -p ${APP_HOME} ${UI_HOME}
 
 COPY frontend/package*.json /tmp/frontend/
-RUN cd /tmp/frontend && npm ci --no-audit --no-fund
+RUN npm config set registry https://registry.npmmirror.com \
+    && npm config set fetch-retries 5 \
+    && npm config set fetch-retry-mintimeout 20000 \
+    && npm config set fetch-retry-maxtimeout 120000 \
+    && cd /tmp/frontend \
+    && npm ci --no-audit --no-fund
 COPY frontend /tmp/frontend
 RUN cd /tmp/frontend && npm run build && mv dist ${UI_HOME}/dist
 
